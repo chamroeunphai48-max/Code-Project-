@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia Collection Vol. 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            padding: 80px 0 40px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .hero-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .intro {
+            text-align: center;
+            padding: 60px 0;
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 80px 0;
+        }
+        .feature-card {
+            text-align: center;
+        }
+        .feature-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 80px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h2 {
+            font-size: 48px;
+            font-weight: 900;
+        }
+        .pricing {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        .price {
+            font-size: 60px;
+            font-weight: 900;
+            margin: 20px 0;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 20px 60px;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            .tagline { font-size: 20px; }
+            .stats { gap: 30px; }
+            .stat h2 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fantasia Collection Vol. 1</h1>
+            <p class="tagline">Where imagination becomes reality through sound</p>
+            <img src="https://source.unsplash.com/random/1200x600/?fantasy,atmospheric,dark" alt="Fantasia Hero Preview" class="hero-image">
+        </header>
+
+        <section class="intro">
+            <p>The Fantasia Series fills a true gap in the sound kit market with its unique approach: transforming imagination and storytelling into sound. Explore five themed worlds — Art, Frozen, Haunted, Nova, and Broken — each with its own signature atmosphere.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="https://source.unsplash.com/random/600x600/?art,fantasy,colorful" alt="Art World">
+                <h3>Art</h3>
+                <p>Colorful and soulful sounds</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://source.unsplash.com/random/600x600/?frozen,ice,winter" alt="Frozen World">
+                <h3>Frozen</h3>
+                <p>Cold, crystalline atmospheres</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://source.unsplash.com/random/600x600/?haunted,dark,horror" alt="Haunted World">
+                <h3>Haunted</h3>
+                <p>Dark and eerie tones</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://source.unsplash.com/random/600x600/?nova,futuristic,space" alt="Nova World">
+                <h3>Nova</h3>
+                <p>Futuristic and cosmic</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://source.unsplash.com/random/600x600/?broken,glitch,dystopian" alt="Broken World">
+                <h3>Broken</h3>
+                <p>Distorted and emotional</p>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat">
+                <h2>+1,600</h2>
+                <p>Sounds & Presets</p>
+            </div>
+            <div class="stat">
+                <h2>6 GB+</h2>
+                <p>Uncompressed</p>
+            </div>
+            <div class="stat">
+                <h2>100%</h2>
+                <p>Royalty Free</p>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Limited Time Offer</h2>
+            <p class="price">$49.99</p>
+            <p><s>$200 Value</s></p>
+            <a href="#" class="buy-button">Buy Now</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Brand. All rights reserved. | Terms | Privacy</p>
+    </footer>
+
+    
+</body>
+</html>
